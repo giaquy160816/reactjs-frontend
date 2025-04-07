@@ -1,4 +1,4 @@
-# 🛍️ Shop Demo
+# 🛍️ Learn Reactjs + Vite
 
 A simple frontend project using **React + Vite** for building a demo e-commerce website.
 
@@ -8,8 +8,8 @@ A simple frontend project using **React + Vite** for building a demo e-commerce 
 
 - ⚛️ React
 - ⚡ Vite
-- 💅 SCSS (or Tailwind - if used)
-- 🎨 Heroicons
+- 💅 SCSS
+- 🎨 Heroicons (for SVG icons)
 
 ---
 
@@ -18,7 +18,8 @@ A simple frontend project using **React + Vite** for building a demo e-commerce 
 ```bash
 git clone https://github.com/giaquy160816/nestjs-admin.git
 npm install
-npm run dev or 
+npm run dev
+------ OR --------
 npm run build 
 npm run preview
 
