@@ -9,7 +9,7 @@ A simple frontend project using **React + Vite** for building a demo e-commerce 
 - ⚛️ React
 - ⚡ Vite
 - 💅 SCSS (or Tailwind - if used)
-- 🎨 Shadcn UI / Custom UI Components
+- 🎨 Heroicons
 
 ---
 
@@ -18,3 +18,7 @@ A simple frontend project using **React + Vite** for building a demo e-commerce 
 ```bash
 git clone https://github.com/giaquy160816/nestjs-admin.git
 npm install
+npm run dev or 
+npm run build 
+npm run preview
+
