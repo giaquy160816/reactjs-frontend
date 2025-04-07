@@ -1,0 +1,54 @@
+.headerPage{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 10px;
+    .pageContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        .headerLogo{
+            width: 200px;
+        }   
+        .headerSearch{
+            width: calc(100% - 480px);
+        }
+        .headerHotline{
+            width: 170px;
+            display: inline-flex;
+            flex-direction: column;
+            gap: 5px;
+            p{
+                margin-bottom: 0;
+                text-align: center;
+                &.hotlineNumber{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: red;
+                }
+                &.hotlineText{
+                    font-size: 12px;
+                }
+            }
+        }
+        .headerCart{
+            width: 50px;
+            .cartIcon{
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                .cart-count{
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    background-color: red;
+                    color: #fff;
+                    border-radius: 50%;
+                    font-size: 14px;
+                    padding: 2px 5px;
+                }
+            }
+        }
+    }
+}
