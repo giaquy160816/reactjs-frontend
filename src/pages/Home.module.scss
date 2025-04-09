@@ -14,11 +14,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
     img {
         border-radius: 8px;
         transition: transform 0.3s ease;
-        
+
         &:hover {
             transform: scale(1.02);
         }
@@ -35,7 +35,7 @@
     margin-bottom: 20px;
     text-align: center;
     color: #333;
-    
+
     &::after {
         content: '';
         display: block;
@@ -49,5 +49,36 @@
 @media (max-width: 768px) {
     .homeTopSection {
         grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .bannerSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .sectionTitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+
+        &::after {
+            margin: 8px auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .homeTopSection {
+        margin-bottom: 20px;
+    }
+
+    .bannerSection {
+        grid-template-columns: 1fr;
+    }
+
+    .productSection {
+        padding: 10px 0;
     }
 }

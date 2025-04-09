@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "@/components/image/slider/Slider";
-import ProductList from "@/components/products/List";
 import ListBanner from "@/components/image/list/Listbanner";
+import ProductList from "@/components/products/Productlist";
 import styles from './Home.module.scss';
 
 export default function Home() {

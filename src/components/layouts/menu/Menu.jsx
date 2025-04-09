@@ -13,15 +13,13 @@ const menuItems = [
 export default function Menu() {
     return (
         <nav className={styles.mainMenu}>
-            <div className="pageContainer">
-                <ul className={styles.menuList}>
-                    {menuItems.map((item) => (
-                        <li key={item.id}>
-                            <a href={item.link}>{item.title}</a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            <ul className={styles.menuList}>
+                {menuItems.map((item) => (
+                    <li key={item.id}>
+                        <a href={item.link}>{item.title}</a>
+                    </li>
+                ))}
+            </ul>
         </nav>
     );
 }

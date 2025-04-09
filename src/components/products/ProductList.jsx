@@ -1,15 +1,13 @@
-import { memo } from 'react';
-import ProductItem from './ProductItem';
-import styles from './ProductList.module.scss';
+import ProductItem from "./ProductItem";
+import ProductData from "@/model/products";
+import styles from "./Productlist.module.scss";
 
-const ProductList = ({ products }) => {
+export default function ProductList() {
     return (
-        <div className={styles.productList}>
-            {products.map(product => (
+        <div className={styles.productGrid}>
+            {ProductData.map((product) => (
                 <ProductItem key={product.id} product={product} />
             ))}
         </div>
     );
-};
-
-export default memo(ProductList);
+}

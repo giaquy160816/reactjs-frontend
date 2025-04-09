@@ -4,25 +4,63 @@
     justify-content: center;
     width: 100%;
     position: relative;
+
     input{
         width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        padding: 10px 45px 10px 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 30px;
         outline: none;
-        height: 40px;
+        height: 42px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+        &:focus {
+            border-color: #007bff;
+            box-shadow: 0 1px 5px rgba(0,123,255,0.2);
+        }
+
+        &::placeholder {
+            color: #999;
+        }
     }
+
     button{
         position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        background-color: red;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 32px;
+        width: 32px;
+        background-color: #ff4d4d;
         color: #fff;
         border: none;
         outline: none;
-        border-radius: 0 5px 5px 0;
-        padding: 0 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #e60000;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .searchForm {
+        input {
+            height: 38px;
+            padding: 8px 40px 8px 12px;
+            font-size: 13px;
+        }
+
+        button {
+            height: 28px;
+            width: 28px;
+        }
     }
 }

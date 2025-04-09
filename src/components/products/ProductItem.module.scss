@@ -4,10 +4,10 @@
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    
+
     &:hover {
         transform: translateY(-5px);
-        
+
         .overlay {
             opacity: 1;
         }
@@ -17,7 +17,7 @@
 .imageWrapper {
     position: relative;
     padding-top: 100%;
-    
+
     img {
         position: absolute;
         top: 0;
@@ -48,7 +48,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s ease;
-    
+
     &:hover {
         background: #0056b3;
     }
@@ -73,4 +73,48 @@
     font-size: 18px;
     font-weight: 600;
     color: #e53935;
+}
+
+@media (max-width: 768px) {
+    .productInfo {
+        padding: 12px;
+    }
+
+    .productName {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .productPrice {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productCard {
+        box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+
+    .productInfo {
+        padding: 10px;
+    }
+
+    .productName {
+        font-size: 14px;
+        margin-bottom: 5px;
+        -webkit-line-clamp: 2;
+    }
+
+    .productPrice {
+        font-size: 15px;
+    }
+
+    .overlay {
+        padding: 10px;
+    }
+
+    .addToCart {
+        padding: 8px;
+        font-size: 13px;
+    }
 }

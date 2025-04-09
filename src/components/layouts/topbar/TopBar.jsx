@@ -9,8 +9,8 @@ function TopBar() {
         return (
             <div className={styles.topBarBanner}>
                 <a href={topBarConfig.banner.link}>
-                    <img 
-                        src={topBarConfig.banner.imageUrl} 
+                    <img
+                        src={topBarConfig.banner.imageUrl}
                         alt={topBarConfig.banner.alt}
                     />
                 </a>
