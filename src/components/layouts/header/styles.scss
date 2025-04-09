@@ -166,6 +166,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    position: relative;
 
     .headerCart {
         .cartIcon {
@@ -174,6 +175,43 @@
             .cart-icon {
                 color: #ff4d4d;
             }
+        }
+    }
+
+    .headerMobileSearch {
+        .searchToggle {
+            background: #f8f9fa;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #333;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .mobileSearchForm {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 10px 15px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        border-radius: 0 0 8px 8px;
+        z-index: 100;
+        display: none;
+        margin-top: 10px;
+
+        &.active {
+            display: block;
         }
     }
 }

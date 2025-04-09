@@ -5,6 +5,7 @@ import TopBar from "../topbar/TopBar";
 import Menu from "../menu/Menu";
 import MobileMenu from "../menu/MobileMenu";
 import Search from "../../form/search/Search";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import useWindowSize from "../../../hooks/useWindowSize";
 import "./styles.scss";
 
@@ -32,8 +33,16 @@ export default function Header() {
                     )}
                     {isMobile && (
                         <div className="headerMobileActions">
+                            <div className="headerMobileSearch">
+                                <button className="searchToggle" onClick={() => document.getElementById('mobileSearchForm').classList.toggle('active')}>
+                                    <MagnifyingGlassIcon width={20} height={20} />
+                                </button>
+                            </div>
                             <div className="headerCart">
                                 <Cart />
+                            </div>
+                            <div id="mobileSearchForm" className="mobileSearchForm">
+                                <Search />
                             </div>
                         </div>
                     )}
