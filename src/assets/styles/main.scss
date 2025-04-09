@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.pageContainer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.homeTopAds {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+    .homeSlider {
+        width: 70%;
+        overflow: hidden;
+    }
+    
+    .homeBanner {
+        width: 30%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        > div {
+            display: block;
+            width: 100%;
+            height: calc((100% - 10px) / 2);
+            position: relative;
+            
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+    }
+}

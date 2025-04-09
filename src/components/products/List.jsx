@@ -1,9 +1,10 @@
-import ProductItem from "@/components/products/Item";
+import ProductItem from "./ProductItem";
 import ProductData from "@/model/products";
-import "./styles.scss";
+import styles from "./List.module.scss";
+
 export default function ProductList() {
     return (
-        <div className="productList">
+        <div className={styles.productGrid}>
             {ProductData.map((product) => (
                 <ProductItem key={product.id} product={product} />
             ))}

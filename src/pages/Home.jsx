@@ -1,22 +1,24 @@
 import React from "react";
-import Layouts from "@/components/layouts/Layouts";
 import Slider from "@/components/image/slider/Slider";
 import ProductList from "@/components/products/List";
 import ListBanner from "@/components/image/list/Listbanner";
+import styles from './Home.module.scss';
+
 export default function Home() {
     return (
-        <Layouts>
-            <div className="pageContainer">
-                <div className="homeTopAds">
-                    <div className="homeSlider">
-                        <Slider />
-                    </div>
-                    <div className="homeBanner">
-                        <ListBanner />
-                    </div>
+        <div className="pageContainer">
+            <div className={styles.homeTopSection}>
+                <div className={styles.sliderSection}>
+                    <Slider />
                 </div>
+                <div className={styles.bannerSection}>
+                    <ListBanner />
+                </div>
+            </div>
+            <div className={styles.productSection}>
+                <h2 className={styles.sectionTitle}>Sản phẩm nổi bật</h2>
                 <ProductList />
             </div>
-        </Layouts>
+        </div>
     );
 }

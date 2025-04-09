@@ -1,12 +1,52 @@
 const products = [
-    { id: 1, name: "Áo thun tay lỡ basic", price: "149.000₫", image: "https://placehold.co/300x300?text=Product+1" },
-    { id: 2, name: "Quần jean rách gối", price: "299.000₫", image: "https://placehold.co/300x300?text=Product+2" },
-    { id: 3, name: "Giày sneaker trắng", price: "499.000₫", image: "https://placehold.co/300x300?text=Product+3" },
-    { id: 4, name: "Giày sneaker đen 1", price: "499.000₫", image: "https://placehold.co/300x300?text=Product+4" },
-    { id: 5, name: "Áo thun tay lỡ basic 1", price: "149.000₫", image: "https://placehold.co/300x300?text=Product+5" },
-    { id: 6, name: "Quần jean rách gối 1", price: "299.000₫", image: "https://placehold.co/300x300?text=Product+6" },
-    { id: 7, name: "Giày sneaker trắng 1", price: "499.000₫", image: "https://placehold.co/300x300?text=Product+7" },
-    { id: 8, name: "Giày sneaker trắng 1", price: "499.000₫", image: "https://placehold.co/300x300?text=Product+8" },
-]
+    {
+        id: 1,
+        name: "iPhone 14 Pro Max",
+        price: "27.990.000₫",
+        image: "https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg"
+    },
+    {
+        id: 2,
+        name: "Samsung Galaxy S23 Ultra",
+        price: "23.990.000₫",
+        image: "https://cdn.tgdd.vn/Products/Images/42/249948/samsung-galaxy-s23-ultra-thumb-xanh-600x600.jpg"
+    },
+    {
+        id: 3,
+        name: "OPPO Find N2 Flip",
+        price: "19.990.000₫",
+        image: "https://hdradio.vn/upload/hinhanh/may-chieu/may-chieu-viewsonic/PX701-4K/may-chieu-Viewsonic-PX701-4K-moi-3.jpg"
+    },
+    {
+        id: 4,
+        name: "Xiaomi 13 Pro",
+        price: "21.990.000₫",
+        image: "https://cdn.tgdd.vn/Products/Images/42/282903/xiaomi-13-pro-thumb-1-600x600.jpg"
+    },
+    {
+        id: 5,
+        name: "iPhone 14 Pro Max",
+        price: "27.990.000₫",
+        image: "https://hdradio.vn/upload/hinhanh/tai-nghe/Bose/Quietcomfort-Earbuds/quietcomfort-earbuds-2024/bose-quietcomfort-earbuds-2024-18.jpg"
+    },
+    {
+        id: 6,
+        name: "Samsung Galaxy S23 Ultra",
+        price: "23.990.000₫",
+        image: "https://hdradio.vn/upload/hinhanh/may-chieu/may-chieu-lg/lg-hu715qw/may-chieu-4k-sieu-gan-lg-hu715qw.jpg"
+    },
+    {
+        id: 7,
+        name: "OPPO Find N2 Flip",
+        price: "19.990.000₫",
+        image: "https://hdradio.vn/upload/hinhanh/may-chieu/may-chieu-viewsonic/PX701-4K/may-chieu-Viewsonic-PX701-4K-moi-3.jpg"
+    },
+    {
+        id: 8,
+        name: "Xiaomi 13 Pro",
+        price: "21.990.000₫",
+        image: "https://hdradio.vn/upload/hinhanh/may-chieu/may-chieu-Optoma/HD30HDR/may-chieu-optoma-HD30HDR-moi-1.jpg"
+    },
+];
 
 export default products;

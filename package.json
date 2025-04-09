@@ -1,5 +1,6 @@
 {
-  "name": "shop-demo-m1",
+  "name": "shop-demo",
+  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +12,9 @@
     "@heroicons/react": "^2.2.0",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-window": "^1.8.9",
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",

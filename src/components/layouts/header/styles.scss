@@ -1,54 +1,105 @@
-.headerPage{
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    margin-bottom: 10px;
-    .pageContainer{
+.headerPage {
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    .pageContainer {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
-        .headerLogo{
-            width: 200px;
-        }   
-        .headerSearch{
-            width: calc(100% - 480px);
+        justify-content: space-between;
+    }
+
+    .headerLogo {
+        img {
+            height: 40px;
+            width: auto;
         }
-        .headerHotline{
-            width: 170px;
-            display: inline-flex;
-            flex-direction: column;
-            gap: 5px;
-            p{
-                margin-bottom: 0;
-                text-align: center;
-                &.hotlineNumber{
-                    font-size: 20px;
-                    font-weight: 600;
-                    color: red;
-                }
-                &.hotlineText{
-                    font-size: 12px;
-                }
-            }
-        }
-        .headerCart{
-            width: 50px;
-            .cartIcon{
-                display: inline-block;
-                text-align: center;
-                position: relative;
-                .cart-count{
-                    position: absolute;
-                    top: -5px;
-                    right: -5px;
-                    background-color: red;
-                    color: #fff;
-                    border-radius: 50%;
-                    font-size: 14px;
-                    padding: 2px 5px;
-                }
+    }
+
+    .headerCart {
+        .cartIcon {
+            position: relative;
+            cursor: pointer;
+            
+            .cart-count {
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                background: #ff4d4d;
+                color: white;
+                border-radius: 50%;
+                padding: 2px 6px;
+                font-size: 12px;
             }
         }
     }
+
+    .headerHotline {
+        .hotlineWrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                background: #e9ecef;
+                transform: translateY(-2px);
+
+                .hotlineIcon {
+                    background: #ff4d4d;
+                    
+                    .phoneIcon {
+                        animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) infinite;
+                    }
+                }
+            }
+        }
+
+        .hotlineIcon {
+            background: #ff6b6b;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+
+            .phoneIcon {
+                width: 24px;
+                height: 24px;
+                color: white;
+            }
+        }
+
+        .hotlineInfo {
+            .hotlineNumber {
+                font-weight: 700;
+                color: #ff4d4d;
+                font-size: 16px;
+                margin: 0;
+            }
+            
+            .hotlineText {
+                font-size: 12px;
+                color: #6c757d;
+                margin: 0;
+                margin-top: 2px;
+            }
+        }
+    }
+}
+
+@keyframes shake {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(-10deg); }
+    20% { transform: rotate(10deg); }
+    30% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    50% { transform: rotate(0); }
+    100% { transform: rotate(0); }
 }
