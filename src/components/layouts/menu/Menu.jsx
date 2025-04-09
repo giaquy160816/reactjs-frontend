@@ -1,4 +1,5 @@
 import styles from './Menu.module.scss';
+import { Link } from 'react-router-dom';
 
 const menuItems = [
     { id: 1, title: 'Trang chủ', link: '/' },
@@ -16,7 +17,7 @@ export default function Menu() {
             <ul className={styles.menuList}>
                 {menuItems.map((item) => (
                     <li key={item.id}>
-                        <a href={item.link}>{item.title}</a>
+                        <Link to={item.link}>{item.title}</Link>
                     </li>
                 ))}
             </ul>

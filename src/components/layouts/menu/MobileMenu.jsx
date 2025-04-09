@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom';
 import styles from './MobileMenu.module.scss';
 
 const menuItems = [
@@ -23,8 +24,8 @@ export default function MobileMenu() {
 
     return (
         <div className={styles.mobileMenu}>
-            <button 
-                className={styles.menuToggle} 
+            <button
+                className={styles.menuToggle}
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
@@ -32,29 +33,29 @@ export default function MobileMenu() {
             </button>
 
             <div className={`${styles.menuOverlay} ${isOpen ? styles.active : ''}`} onClick={toggleMenu}></div>
-            
+
             <div className={`${styles.menuPanel} ${isOpen ? styles.active : ''}`}>
                 <div className={styles.menuHeader}>
-                    <button 
-                        className={styles.closeButton} 
+                    <button
+                        className={styles.closeButton}
                         onClick={toggleMenu}
                         aria-label="Close menu"
                     >
                         <XMarkIcon width={24} height={24} />
                     </button>
                 </div>
-                
+
                 <nav className={styles.menuContent}>
                     <ul className={styles.menuList}>
                         {menuItems.map((item) => (
                             <li key={item.id}>
-                                <a href={item.link} onClick={toggleMenu}>
+                                <Link to={item.link} onClick={toggleMenu}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
-                    
+
                     <div className={styles.menuFooter}>
                         <a href="tel:0906366023" className={styles.hotlineButton}>
                             Gọi ngay: 0906 366 023
