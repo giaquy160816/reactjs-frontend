@@ -1,6 +1,6 @@
 import ProductItem from "./ProductItem";
 import ProductData from "@/model/products";
-import styles from "./Productlist.module.scss";
+import styles from "./ProductList.module.scss";
 
 export default function ProductList() {
     return (
