@@ -3,6 +3,8 @@ import MainLayout from './MainLayout';
 import Home from '../pages/Home';
 import Contact from '../pages/contact/Contact';
 import ProductDetail from '../pages/product/ProductDetail';
+import Error404 from '../pages/error/Error404';
+import BlogList from '../pages/blog/BlogList';
 
 const router = createBrowserRouter([
     {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
             {
                 path: 'san-pham/:id',
                 element: <ProductDetail />
+            },
+            {
+                path: 'blog',
+                element: <BlogList />
+            },
+            {
+                path: '*',
+                element: <Error404 />
             }
         ]
     }

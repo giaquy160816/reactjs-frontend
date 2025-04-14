@@ -3,7 +3,7 @@ export default function Logo() {
         <div className="text-xl font-bold text-blue-600">
             <a href="/">
                 <img 
-                    src="https://phoaudio.com/upload/logo/logophoaudio-web%20(1).png"
+                    src="https://hdradio.vn/upload/app/hdradio.png"
                     alt="Logo"
                 />
             </a>

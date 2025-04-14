@@ -1,0 +1,136 @@
+.errorPage {
+    min-height: calc(100vh - 200px); // Trừ đi header và footer
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.errorContainer {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.errorCode {
+    font-size: 120px;
+    font-weight: 700;
+    color: #ff4d4d;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
+    span {
+        display: inline-block;
+        animation: bounce 1s ease infinite;
+    }
+}
+
+.errorTitle {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.errorMessage {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.errorActions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+    .homeButton, .backButton {
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+    
+    .homeButton {
+        background: #ff4d4d;
+        color: white;
+        
+        &:hover {
+            background: #ff3333;
+            box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
+        }
+    }
+    
+    .backButton {
+        background: #f0f0f0;
+        color: #333;
+        
+        &:hover {
+            background: #e0e0e0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+// Animation
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+// Responsive
+@media (max-width: 768px) {
+    .errorContainer {
+        padding: 30px 20px;
+    }
+    
+    .errorCode {
+        font-size: 100px;
+    }
+    
+    .errorTitle {
+        font-size: 24px;
+    }
+    
+    .errorMessage {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .errorPage {
+        padding: 20px;
+    }
+    
+    .errorCode {
+        font-size: 80px;
+    }
+    
+    .errorTitle {
+        font-size: 20px;
+    }
+    
+    .errorActions {
+        flex-direction: column;
+        
+        .homeButton, .backButton {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
